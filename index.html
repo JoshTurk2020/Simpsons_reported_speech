@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reported Speech Game - The Simpsons</title>
+  <style>
+    .dialogue {
+      color: blue;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .reported {
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid black;
+      background-color: #f0f0f0;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Reported Speech Game - The Simpsons</h1>
+  
+  <p>One morning, Homer woke up late for work. <span class="dialogue" onclick="toggleReported(0)">Marge said, "Homer, you're going to be late for work again!"</span></p>
+  <div class="reported">Marge told Homer that he was going to be late for work again.</div>
+  
+  <p><span class="dialogue" onclick="toggleReported(1)">Homer replied, "Don't worry, Marge. I have a plan."</span></p>
+  <div class="reported">Homer told Marge not to worry and that he had a plan.</div>
+  
+  <p>At the power plant, Homer's boss, Mr. Burns, was angry. <span class="dialogue" onclick="toggleReported(2)"> "Simpson, you're late! Get to work now!" Mr. Burns shouted.</span></p>
+  <div class="reported">Mr. Burns shouted at Homer, telling him he was late and ordering him to get to work immediately.</div>
+   
+  <p><span class="dialogue" onclick="toggleReported(3)">Homer said, "Yes, sir! I'll get right to it."</span></p>
+  <div class="reported">Homer said "Yes, sir!" and that he would get right to it.</div>
+
+  <p>Later, Homer snuck out of work to go to Moe's Tavern. <span class="dialogue" onclick="toggleReported(4)">Moe greeted him, "Hey, Homer! The usual?"</span></p>
+  <div class="reported">Moe greeted Homer and asked if he wanted the usual.</div>
+
+  <p><span class="dialogue" onclick="toggleReported(5)">Homer responded, "You know it, Moe. I need a break from work."</span></p>
+  <div class="reported">Homer responded affirmatively to Moe and said he needed a break from work.</div>
+
+  <p>Back at home, Lisa was doing her homework. <span class="dialogue" onclick="toggleReported(6)">She asked Homer, "Dad, can you help me with my math homework?"</span></p>
+  <div class="reported">Lisa asked Homer if he could help her with her math homework.</div>
+
+  <p><span class="dialogue" onclick="toggleReported(7)">Homer said, "Sure, sweetie. But first, let's watch some TV."</span></p>
+  <div class="reported">Homer agreed to help Lisa but suggested they watch some TV first.</div>
+
+  <p>Bart was skateboarding in the house. <span class="dialogue" onclick="toggleReported(8)">Marge yelled, "Bart, stop skateboarding inside the house!"</span></p>
+  <div class="reported">Marge yelled at Bart, telling him to stop skateboarding inside the house.</div>
+
+  <p><span class="dialogue" onclick="toggleReported(9)">Bart said, "Aw, mom. I'm just practicing my moves."</span></p>
+  <div class="reported">Bart said "Aw, mom" and explained that he was just practicing his moves.</div>
+
+  <p>At the end of the day, the family gathered for dinner. <span class="dialogue" onclick="toggleReported(10)">Homer said, "What a day! I love you all."</span></p>
+  <div class="reported">Homer remarked on what a day it had been and expressed his love for his family.</div>
+
+  <script>
+    function toggleReported(index) {
+      var reportedItems = document.getElementsByClassName("reported");
+      var reportedItem = reportedItems[index];
+      reportedItem.style.display = reportedItem.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
